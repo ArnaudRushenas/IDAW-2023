@@ -83,7 +83,8 @@ nav > ul li:hover .sous{
 }
 
 #currentpage{
-    background-color: royalblue;
+    background-color: rgb(209, 31, 132);
+    color : white
     position: absolute;
     width: 100%;
     z-index: 1000;
