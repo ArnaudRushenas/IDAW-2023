@@ -1,0 +1,71 @@
+body{
+    background-color: blanchedalmond);
+  }
+  
+  .conteneur-titre{
+    border: 2px solid lightpink;
+    width: 100%;
+    background-color: darkturquoise;
+  }
+  
+  .base{
+    width: 100%;
+  }
+  button{
+    background-color:cornflowerblue;
+  }
+  .conteneur-flex{
+    display: flex;
+    flex-flow: wrap;
+    align-items:center;
+    justify-content: space-around;
+    align-content: space-around;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: floralwhite;
+  }
+  
+  .colonne{
+    flex-direction: column;
+    background-color: floralwhite;
+  }
+  
+  .ligne{
+    flex-direction: row;
+    background-color: darkturquoise;
+    border: 2px solid lightpink;
+  }
+  
+  #current{
+    color: indianred
+  }
+  
+  .element-flex{
+    flex: 1 1 50px;
+    width: 40%;
+    height: 40%;
+    box-sizing: border-box;
+    margin: 10px;
+    
+  }
+  
+  h1{
+      font-size: 50px;
+      color: blue;
+      text-align: center;
+    }
+  h2{
+    color:midnightblue;
+    text-align: center;
+  }
+  h3{
+    color: midnightblue;
+  }
+  p{
+    color: firebrick;
+  }
+  footer{
+    width: 100%;
+    background-color: darkturquoise;
+    color: indianred;
+  }
