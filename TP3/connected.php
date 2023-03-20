@@ -1,5 +1,5 @@
 <?php
-
+// session_start();
 require_once("template_header.php");
 require_once("template_style.php");
 // on simule une base de données
@@ -39,7 +39,8 @@ $tryPwd=$_POST['password'];
 if( array_key_exists($tryLogin,$users) && $users[$tryLogin]==$tryPwd ) {
 $successfullyLogged = true;
 $login = $tryLogin;
-} else
+} 
+else
 $errorText = "Erreur de login/password";
 }
 else
@@ -47,7 +48,8 @@ $errorText = "Merci d'utiliser le formulaire de login";
 
 if(!$successfullyLogged) {
 echo $errorText;
-} else {
+} 
+else {
     $_SESSION['login'] = $login;
 }
 ?>
