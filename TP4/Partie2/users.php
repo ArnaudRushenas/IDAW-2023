@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>USERS</title>
-    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
-</head>
-
-<body>
 <?php
-
 
 require_once('config.php');
 
@@ -32,6 +22,24 @@ echo 'Erreur : '.$erreur->getMessage();
 $request = $pdo->prepare("select * from users");
 $request->execute();
 $result=$request->fetchAll(PDO::FETCH_OBJ);
+?>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Users TP4</title>
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+</head>
+
+<body>
+
+
+</body>
+
+</html>
+
+<?php
 
 echo "<table><tr><th>ID</th><th>Name</th><th>Email</th></tr>";
     foreach ($result as $user) {
@@ -53,6 +61,3 @@ $pdo = null;
 
 ?>
 
-</body>
-
-</html>
