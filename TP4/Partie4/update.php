@@ -2,26 +2,25 @@
 require_once('config.php');
 require_once('connection_db.php');
 
-// Check if the form has been submitted
+// Si le formulaire d'update est "submitted"
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Retrieve the user's updated information
     $id = $_POST['id'];
     $name = $_POST['name'];
     $email = $_POST['email'];
 
-    // Update the user's information in the database
+
     $stmt = $pdo->prepare("UPDATE users SET name=?, email=? WHERE id=?");
     $stmt->execute([$name, $email, $id]);
 
-    // Redirect back to the original page
+    // Rediriger à la page users
     header('Location: usersv2.php');
     exit();
 }
 
-// Retrieve the user's ID from the GET parameters
 $id = $_GET['id'];
 
-// Retrieve the user's current information from the database
+
 $stmt = $pdo->prepare("SELECT * FROM users WHERE id='$id'");
 $stmt->execute();
 $user = $stmt->fetch(PDO::FETCH_OBJ);
