@@ -35,7 +35,7 @@ $result=$request->fetchAll(PDO::FETCH_OBJ);
                 <td><?php echo $user->name; ?></td>
                 <td><?php echo $user->email; ?></td>
                 <td>
-                    <form method="post" action="edit.php">
+                    <form method="get" action="update.php">
                         <input type="hidden" name="id" value="<?php echo $user->id; ?>">
                         <button type="submit">Update</button>
                     </form>
