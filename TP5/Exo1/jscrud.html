@@ -25,7 +25,6 @@
             <th scope="col">Aime le cours Web</th>
             <th scope="col">Remarques</th>
             <th scope="col">CRUD</th>
-            <th scope="col3">Actions</th>
         </tr>
     </thead>
     <tbody id="studentsTableBody">
@@ -113,6 +112,7 @@
                 $("#submitButton").text("Modifier");
                 $("#editingRowIndex").val(rowIndex);
             });
+            $("#studentForm")[0].reset();
         } else {
             // Mettre à jour la ligne existante
             let row = $("#studentsTableBody tr").eq(rowIndex);
