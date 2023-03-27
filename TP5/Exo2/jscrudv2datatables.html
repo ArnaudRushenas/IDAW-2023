@@ -4,6 +4,110 @@
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css" rel="stylesheet"/>
+    <style>
+        .dataTables thead th {
+  font-weight: bold;
+  color: #404040;
+  background-color: #edbfbf;
+  border-color: #5f1717;
+}
+
+/* Set font and colors for table data */
+.dataTables td {
+  color: #404040;
+  background-color: #ffffff;
+  border-color: #e0e0e0;
+}
+
+/* Add hover effect to table rows */
+tr:hover {
+  background-color: #f2f2f2;
+}
+
+/* Add padding to table cells */
+.dataTables td,
+.dataTables th {
+  padding: 10px;
+}
+
+/* Set styles for pagination controls */
+.paginate_button {
+  font-weight: bold;
+  color: #963678;
+  background-color: #ffffff;
+  border-color: #e0e0e0;
+  border-radius: 4px;
+}
+
+/* Set styles for active pagination control */
+.paginate_button.current {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+/* Add margin to pagination controls */
+.dataTables_paginate {
+  margin-top: 20px;
+}
+
+/* Set font and colors for form labels */
+.form-group label {
+  font-weight: bold;
+  color: #404040;
+}
+
+/* Set font and colors for form inputs */
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group input[type="checkbox"] {
+  color: #404040;
+  border-color: #bc7d7d;
+}
+
+/* Set styles for form buttons */
+.form-group button {
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #068db6;
+  border-color: #820563;
+}
+
+/* Add margin to form buttons */
+.form-group button {
+  margin-top: 10px;
+}
+
+/* Set styles for edit and delete buttons */
+.edit-btn,
+.delete-btn {
+  font-weight: bold;
+  color: #ffffff;
+  border-color: #007bff;
+}
+
+/* Set styles for edit button */
+.edit-btn {
+  background-color: #28a745;
+}
+
+/* Set styles for delete button */
+.delete-btn {
+  background-color: #dc3545;
+}
+
+/* Add hover effect to edit and delete buttons */
+.edit-btn:hover,
+.delete-btn:hover {
+  color: #ffffff;
+  background-color: #0069d9;
+}
+
+/* Add transition to edit and delete buttons */
+.edit-btn,
+.delete-btn {
+  transition: all 0.3s ease;
+}
+    </style>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
     <title>tabletest</title>
@@ -139,5 +243,5 @@
         });
     </script>
 
-</body>
+    </body>
 </html>
