@@ -1,7 +1,7 @@
 <?php 
 
-require_once(config.php);
-require_once(connection_db.php);
+require_once('config.php');
+require_once('connection_db.php');
 
 function getAllUsers() {
     global $pdo; // declaring $pdo as global
